@@ -1,10 +1,14 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-
+import { theme } from "../taskly/theme";
+import { StyleSheet, View } from "react-native";
+import { ShoppingListItem } from "./components/ShoppingListItem";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hey you. Open up App.tsx to start working on your app!</Text>
+      <ShoppingListItem name={"Coffee"} />
+      <ShoppingListItem name={"Tea"} isCompleted />
+      <ShoppingListItem name={"Chips"} isCompleted />
+      <ShoppingListItem name={"Juice"} isCompleted />
       <StatusBar style="auto" />
     </View>
   );
@@ -14,7 +18,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
     justifyContent: "center",
   },
 });
