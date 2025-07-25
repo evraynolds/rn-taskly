@@ -1,7 +1,8 @@
+import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { theme } from "../taskly/theme";
 import { StyleSheet, View } from "react-native";
-import { ShoppingListItem } from "./components/ShoppingListItem";
+import { ShoppingListItem } from "../components/ShoppingListItem";
+
 export default function App() {
   return (
     <View style={styles.container}>
